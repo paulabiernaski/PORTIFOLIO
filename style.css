@@ -1,0 +1,107 @@
+/* Importando a fonte personalizada */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+
+/* Variáveis de cores */
+:root {
+  --cor-principal: hwb(0 100% 0%); /* Cinza */
+  --cor-secundaria: hsl(0, 0%, 100%); /* Azul-escuro */
+  --cor-destaque: hwb(0 100% 0%); /* Roxo */
+}
+
+/* Aplicando a fonte ao corpo da página */
+body {
+  font-family: 'Chakra Petch', sans-serif;
+  margin: 20px;
+  background-color: #890b42; /* Cor de fundo clara */
+}
+
+/* Estilizando o cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+  width: 150px; /* Ajuste do tamanho da foto */
+  height: 150px;
+  border-radius: 50%; /* Deixa a imagem circular */
+  margin-bottom: 20px; /* Espaço abaixo da foto */
+  border: 3px solid var(--cor-destaque); /* Borda destacada */
+}
+
+/* Estilizando títulos */
+h1 {
+  color: var(--cor-destaque); /* Cor roxa */
+  font-size: 2.5em; /* Ajuste do tamanho da fonte */
+  font-weight: 700; /* Negrito */
+}
+
+h2, h5 {
+  color: var(--cor-secundaria); /* Cor azul-escuro */
+  font-weight: 700; /* Negrito */
+}
+
+/* Estilizando os textos dos projetos */
+.projeto-texto {
+  color: var(--cor-principal); /* Cor cinza */
+  font-size: 1.1em;
+}
+
+/* Estilizando o link no rodapé */
+footer a {
+  color: var(--cor-principal); /* Cor cinza */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Efeito hover no link */
+footer a:hover {
+  color: var(--cor-destaque); /* Cor roxa */
+}
+
+/* Estilizando o rodapé */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9em;
+}
+/* Estilizando o título "Meus Projetos" e a frase abaixo */
+.projetos h2 {
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 10px; /* Espaço abaixo do título */
+  font-size: 2em; /* Tamanho do título */
+}
+
+.projetos .projeto-texto {
+  text-align: center; /* Centraliza o texto descritivo */
+  margin-bottom: 20px; /* Espaço abaixo da descrição */
+  font-size: 1.2em; /* Tamanho do texto */
+}
+
+/* Contêiner centralizado para as imagens */
+.projetos-container {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 20px; /* Espaço entre as imagens */
+}
+
+.projeto {
+  text-align: center; /* Centraliza a legenda */
+}
+
+.projeto img {
+  width: 100%; /* Ocupa toda a largura disponível no contêiner */
+  max-width: 300px; /* Limite de tamanho para cada imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 4px 8px 3B3C3C(255, 255, 255); /* Sombra suave */
+}
+
+.projeto p {
+  margin-top: 10px; /* Espaço entre a imagem e a legenda */
+  font-size: 1em; /* Tamanho da legenda */
+  color: var(--cor-secundaria); /* Cor azul-escuro */
+}
+
+
